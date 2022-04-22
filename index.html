@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="images\favicon.png">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- AOS - efectos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- META DESCRIPTION -->
+  <meta name="description" content="TomiTorresDev - Desarrollo Web">
+
+  <!-- KEYWORDS -->
+  <meta name="keywords"
+    content="TomiTorresDev - Desarrollo Web">
+
+  <!-- SCRIPT PARA GRÁFICO DE TORTA -->
+
+  <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
+
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:tittle" content="Sorteo equipo">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images\">
+  <meta property="og:image:width" content="320px">
+  <meta property="og:image:height" content="118px">
+  <meta property="og:url" content="index.html">
+  <meta property="og:description" content="TomiTorresDev - Desarrollo Web">
+  <meta property="og:author" content="TomiTorresDev">
+  <meta property="og:locale" content="en_AR">
+  <title> Sorteo equipo </title>
+</head>
+
+<body  id="body" >
+
+<!-- BARRA DE NAVEGACION -->
+
+<!-- <div class="proximamente">
+    <p>
+    Próximamente.
+    </p>
+</div> -->
+
+
+<section class="section" id="ttdcont">
+
+    <form class="form"  id="form">
+
+    <input class="input" type="text" placeholder="Ingresá el nombre" id="jugadoringresado">
+
+    <button class="buttonagre" type="submit" id="agregarnombre"> + </button>
+
+
+    </form>
+<!--
+    <button type="submit" id="sortear">Sortear</button> -->
+    <button class="button" id="sortear"> SORTEAR </button>
+    <button class="button" id="showoctavos"> OCTAVOS </button>
+    <button class="button" id="showcuartos"> CUARTOS </button>
+    <button class="button" id="showsemis"> SEMIS </button>
+    <button class="button" id="showfinal"> FINAL </button>
+    <button class="button" id="showgeneral"> VER GENERAL </button>
+
+    <div class="listado" id="listado">
+
+    </div>
+
+
+    <div class="playoff">
+    <!-- OCTAVOS -->
+        <div class="enfrentamientos" id="playoctavos">
+
+           
+                <div class="vs" id="octavosuno"> </div>
+    
+                <div class="vs" id="octavosdos">  </div>
+    
+                <div class="vs" id="octavostres">  </div>
+    
+                <div class="vs" id="octavoscuatro"> </div>
+
+                <div class="vs" id="octavoscinco"> </div>
+    
+                <div class="vs" id="octavosseis">  </div>
+    
+                <div class="vs" id="octavossiete">  </div>
+    
+                <div class="vs" id="octavosocho"> </div>
+
+
+                
+    
+           </div>
+
+        <!-- CUARTOS -->
+       <div class="enfrentamientos" id="playcuartos">
+
+            <div class="vs" id="cuartosuno"> </div>
+
+            <div class="vs" id="cuartosdos">  </div>
+
+            <div class="vs" id="cuartostres">  </div>
+
+            <div class="vs" id="cuartoscuatro"> </div>
+
+       </div>
+
+       <!-- SEMIS -->
+       <div class="enfrentamientos" id="playsemis">
+
+        <div class="vs" id="semisuno">
+
+        </div>
+
+        <div class="vs" id="semisdos">
+
+        </div>
+       </div>
+
+       <!--  FINAL -->
+       <div class="enfrentamientos" id="playfinal">
+        <div class="vs" id="final">
+
+        </div>
+       </div>
+
+       <div class="enfrentamientos" id="enfrentamientos">
+        <p class="cuadrofinal" id="jcampeon"></p>
+        <p class="cuadrofinalchamp">Campeón/a</p>
+       </div>
+    </div>
+
+
+</section>
+
+
+<!-- MENU
+
+<button  class="menumobilebutton" id="menumobilebutton" type="text">+</button>
+
+<nav id="menunav" class="menu-nav">
+  <ul class="menu-cont">
+    <a class="menu-item borde1"  href="#githubsect" id="menu1">GITHUB</a>
+    <a class="menu-item borde2"  href="#secciontrabajos" id="menu2">TRABAJOS</a>
+    <a class="menu-item borde3" href="#seccionskills" id="menu3">SKILLS</a>
+    <a class="menu-item borde4" href="#seccionprecios" id="menu4">PRECIOS</a>
+    <a class="menu-item borde5" href="#reservawa" id="menu5">CONTACTO</a>
+
+  </ul>
+</nav> -->
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script src="componentes.js"></script>
+
+  <script src="main.js"></script>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 150, // offset (in px) from the original trigger point
+      delay: 10, // values from 0 to 3000, with step 50ms
+      duration: 700, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
+  </script>
+
+</body>
+
+</html>

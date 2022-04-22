@@ -1,0 +1,29 @@
+/* MIXINS */
+
+/*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
+
+@mixin destacados($size) {
+    font-family: 'Raleway', sans-serif;
+    font-size: $size;
+}
+
+
+/*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
+
+@mixin textos($color, $padding) {
+    font-size: 1rem;
+    font-weight: nth($font-weight, 2);
+    color: $color;
+    padding: $padding;
+}
+
+@mixin table-card($width, $height) {
+    background-color: rgb(255, 255, 255, 50%);
+    border-radius: 25px;
+    align-items: center;
+    transition: 0.3s all;
+    width: $width;
+    height: $height;
+}
+
+/*AGREGAR WEBKITS*/

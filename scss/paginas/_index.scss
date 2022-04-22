@@ -1,0 +1,245 @@
+@import '../funciones/mixins';
+@import '../funciones/list';
+
+*{
+    padding: 0;
+    margin: 0;
+
+    ::-webkit-scrollbar {
+        width: 10px;
+     }
+
+    ::-webkit-scrollbar-thumb {
+        background: nth($color, 2);
+        border-radius: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        box-shadow: rgb(238 234 244) 0px 0px 5px inset;
+        border-radius: 10px;
+    }
+
+}
+
+body {
+    line-height: 1.55;
+    margin: 0px auto;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(46,61,68);
+    background: linear-gradient(180deg, rgba(46,61,68,1) 5%, rgba(48,11,57,1) 100%);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+nav {
+    text-align: left;
+    position: fixed;
+    left: 0rem;
+    top: 1rem;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    opacity: 20%;
+    letter-spacing: 1rem;
+    font-size: 0.8rem;
+    &:hover {
+        opacity: 100%;
+
+  }
+}
+
+.menu-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-decoration: none;
+    align-items: left;
+}
+
+
+
+.menu-item {
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+    padding: 0.5rem 2rem;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+          background-color: rgb(120,168,141);
+          color: white;
+
+    }
+}
+
+
+.menu-item-mini {
+    letter-spacing: 0.3rem;
+    font-size: 0.6rem;
+}
+
+.section {
+    height: fit-content;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.titulos {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.subtitulos {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 15rem;
+}
+
+.form {
+    margin: 3rem;
+}
+
+
+.ttd-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+
+    margin-top: 3rem;
+}
+
+.listado {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+
+.jugadorlistado {
+    margin:  0.2rem;
+    padding: 1rem;
+    background-color: rgb(128, 128, 128, 30%);
+    color: white;
+}
+
+.white {
+    color: white;
+}
+
+.button {
+    padding: 0.5rem 2rem;
+    border: none;
+    color: white;
+    background-color: rgb(49, 85, 57, 50%);
+    font-weight: bolder;
+}
+
+.buttonagre {
+    padding: 0.4rem;
+    border: none;
+    color: white;
+    background-color: rgb(49, 85, 57, 50%);
+}
+
+.playoff {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+
+.input {
+    font-size: 0.8rem;
+    padding-left: 0.3rem;
+    padding: 0.4rem;
+}
+
+.input ::placeholder{
+    font-size: 0.8rem;
+    padding-left: 0.3rem;
+}
+
+.enfrentamientos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    transition: 0.5s all ease-in-out;
+}
+
+.jugador-cont {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.resultado {
+margin: auto 0.1rem;
+width: 2.5rem;
+height: 2.5rem;
+font-weight: bolder;
+font-family: 'Roboto Slab', serif;
+color: rgb(59, 59, 59);
+background-color: grey;
+border: none;
+text-align: center;
+
+
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+.resultado ::placeholder {
+    color: green;
+}
+
+.vs {
+    margin: 0.3rem;
+}
+
+.cuadro, .cuadrofinal, .cuadrofinalchamp {
+    width: 10rem;
+    height: 2.5rem;
+    padding: 0.5rem 2rem;
+    margin: 0.3rem;
+    background-color: rgb(128, 128, 128, 30%);
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+
+    transition: 0.5s all ease-in-out;
+}
+
+.cuadrofinalchamp {
+    color: rgb(255, 242, 123);
+    background-color: rgb(150, 137, 22);
+}
+
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,477 @@
+/* LISTAS */
+/* MIXINS */
+/*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
+/*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
+/*AGREGAR WEBKITS*/
+/* LISTAS */
+/* MIXINS */
+/*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
+/*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
+/*AGREGAR WEBKITS*/
+/* LISTAS */
+* {
+  padding: 0;
+  margin: 0;
+}
+* ::-webkit-scrollbar {
+  width: 10px;
+}
+* ::-webkit-scrollbar-thumb {
+  background: #300b39;
+  border-radius: 8px;
+}
+* ::-webkit-scrollbar-track {
+  box-shadow: #eeeaf4 0px 0px 5px inset;
+  border-radius: 10px;
+}
+
+body {
+  line-height: 1.55;
+  margin: 0px auto;
+  font-family: "Montserrat", sans-serif;
+  background: #2e3d44;
+  background: linear-gradient(180deg, #2e3d44 5%, #300b39 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+nav {
+  text-align: left;
+  position: fixed;
+  left: 0rem;
+  top: 1rem;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  opacity: 20%;
+  letter-spacing: 1rem;
+  font-size: 0.8rem;
+}
+nav:hover {
+  opacity: 100%;
+}
+
+.menu-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  text-decoration: none;
+  align-items: left;
+}
+
+.menu-item {
+  font-family: "Roboto Slab", serif;
+  font-weight: lighter;
+  padding: 0.5rem 2rem;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.menu-item:hover {
+  background-color: #78a88d;
+  color: white;
+}
+
+.menu-item-mini {
+  letter-spacing: 0.3rem;
+  font-size: 0.6rem;
+}
+
+.section {
+  height: fit-content;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.titulos {
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.subtitulos {
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 15rem;
+}
+
+.form {
+  margin: 3rem;
+}
+
+.ttd-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 3rem;
+}
+
+.listado {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+}
+
+.jugadorlistado {
+  margin: 0.2rem;
+  padding: 1rem;
+  background-color: rgba(128, 128, 128, 0.3);
+  color: white;
+}
+
+.white {
+  color: white;
+}
+
+.button {
+  padding: 0.5rem 2rem;
+  border: none;
+  color: white;
+  background-color: rgba(49, 85, 57, 0.5);
+  font-weight: bolder;
+}
+
+.buttonagre {
+  padding: 0.4rem;
+  border: none;
+  color: white;
+  background-color: rgba(49, 85, 57, 0.5);
+}
+
+.playoff {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+}
+
+.input {
+  font-size: 0.8rem;
+  padding-left: 0.3rem;
+  padding: 0.4rem;
+}
+
+.input ::placeholder {
+  font-size: 0.8rem;
+  padding-left: 0.3rem;
+}
+
+.enfrentamientos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  transition: 0.5s all ease-in-out;
+}
+
+.jugador-cont {
+  display: flex;
+  flex-direction: row;
+}
+
+.resultado {
+  margin: auto 0.1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-weight: bolder;
+  font-family: "Roboto Slab", serif;
+  color: #3b3b3b;
+  background-color: grey;
+  border: none;
+  text-align: center;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.resultado ::placeholder {
+  color: green;
+}
+
+.vs {
+  margin: 0.3rem;
+}
+
+.cuadro, .cuadrofinal, .cuadrofinalchamp {
+  width: 10rem;
+  height: 2.5rem;
+  padding: 0.5rem 2rem;
+  margin: 0.3rem;
+  background-color: rgba(128, 128, 128, 0.3);
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+
+.cuadrofinalchamp {
+  color: #fff27b;
+  background-color: #968916;
+}
+
+.hide {
+  display: none;
+}
+
+/* MIXINS */
+/*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
+/*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
+/*AGREGAR WEBKITS*/
+/* MOBILE */
+/* Extends */
+/* LISTAS */
+/* MIXINS */
+/*USADOS PARA LAS CLASS: DETACADO Y TITULOS*/
+/*USADOS PARA LAS CLASS: PARRAFOS Y GLOSARIO-TEXTO*/
+/*AGREGAR WEBKITS*/
+/*MOBILE QUERY*/
+@media only screen and (min-width: 601px) {
+  .none-desktop {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 600px) {
+  body .none-mobile {
+    display: none !important;
+  }
+
+  .section {
+    height: fit-content;
+    padding: 10rem 3rem;
+  }
+
+  nav {
+    text-align: center;
+    top: 0rem;
+    width: 100%;
+    opacity: 100%;
+    font-size: 0.8rem;
+    background: #300b39;
+    background: linear-gradient(0deg, #300b39 17%, black 90%, rgba(0, 0, 0, 0) 100%);
+    background-repeat: no-repeat;
+    padding: 10rem 0rem 40rem 0rem;
+    transition: 0.5s all ease-in-out;
+    z-index: 50;
+  }
+
+  .textopeq {
+    font-size: 0.6rem;
+  }
+
+  .darkmodebutton {
+    top: 1.5rem;
+    right: 1rem;
+    z-index: 100;
+  }
+
+  .gitsect {
+    background-color: rgba(37, 37, 37, 0.3);
+    width: 80%;
+    padding: 2rem;
+  }
+
+  .githubperfilcont {
+    width: 90%;
+    flex-direction: column;
+    margin: 2rem auto;
+  }
+
+  .githubperfil {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 1rem;
+  }
+
+  .ttd {
+    font-size: 0.7rem;
+  }
+
+  .ttd-text {
+    font-size: 0.7rem;
+  }
+
+  .mail {
+    font-size: 0.7rem;
+  }
+
+  .titulos {
+    font-size: 1.5rem;
+  }
+
+  .paginascont {
+    margin: 0 auto;
+  }
+
+  .nuestrostrabajosstatic {
+    width: 120%;
+    margin: 1rem;
+    border-radius: 10px;
+    font-size: 3rem;
+    padding: 5rem;
+  }
+
+  .menumobilebutton {
+    font-size: 3rem;
+    color: #78a88d;
+    font-weight: lighter;
+    background: none;
+    border: none;
+    position: fixed;
+    top: 0rem;
+    left: 1rem;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    z-index: 100;
+  }
+
+  .menu-item {
+    margin-top: 1rem;
+  }
+
+  .rotar {
+    color: #dda4a4;
+    transform: rotate(135deg);
+  }
+
+  .subtitulos-trabajos, .skills, .precios-opc, .wabotonmensaje {
+    font-size: 1rem;
+  }
+
+  .skillscont, .opc-cont, .nuestrostrabajoscont {
+    margin-top: 2rem;
+  }
+
+  .servicios {
+    width: 100%;
+    margin: 1rem;
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+
+  .servicios-opc {
+    font-size: 0.8rem;
+  }
+
+  .subtitulos-trabajos-deskmob {
+    padding: 0.15rem;
+    font-size: 0.7rem;
+    margin: 0.1rem;
+    transition: 0.5s ease-in-out;
+    width: 5rem;
+    cursor: pointer;
+  }
+  .subtitulos-trabajos-deskmob:hover {
+    color: white;
+    background-color: #78a88d;
+  }
+
+  .input {
+    width: 80%;
+    height: fit-content;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .wabotonmensaje {
+    margin: 0.5rem;
+  }
+
+  .bio {
+    margin: 0 auto;
+    transition: 0.5s ease-in-out;
+    font-family: "Roboto Slab", serif;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 0.8rem;
+    border-radius: 15px;
+  }
+
+  .nuestrostrabajosimg {
+    width: 100%;
+  }
+
+  .cant-pag {
+    width: 4rem;
+    font-size: 0.7rem;
+  }
+
+  .github-cont {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .githubsquarecont {
+    flex-wrap: wrap;
+  }
+
+  .githubsquare {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0.15rem;
+    border-radius: 1.5px;
+    background-color: #2d323a;
+  }
+
+  .githubperfilsubcont {
+    margin: 0rem;
+  }
+
+  .gitrepocont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 1rem;
+    margin: 0.5rem;
+  }
+
+  .gitrepolinea {
+    flex-direction: column;
+  }
+
+  .gitrepotext1 {
+    font-size: 0.8rem;
+  }
+
+  .gitrepotext2 {
+    height: fit-content;
+    font-size: 0.6rem;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .gitrepotext3 {
+    font-size: 0.8rem;
+    position: relative;
+    float: left;
+  }
+
+  .wabotonmensaje {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
